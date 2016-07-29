@@ -4,13 +4,13 @@
 
 1. Via Laravel Installer
    1. Baixar o Laravel Installer via Composer.
-   2. No fedora 23 abrir arquivo `.bashrc` e adicionar as seguintes linhas no final do arquivo
+   1. No fedora 23 abrir arquivo `.bashrc` e adicionar as seguintes linhas no final do arquivo
   ```
     COMPOSER_PATH=~/.composer/vendor/bin
     PATH=$COMPOSER_PATH:$PATH
     export PATH
   ```
-  3. Rodar o comando `laravle new nome-do-diretorio`.
+   1. Rodar o comando `laravel new nome-do-diretorio`.
 
 2. Via Composer `create-project`
   1. Rodar o comando `composer create-project laravel/laravel nome-do-diretorio --prefer-dist`.
