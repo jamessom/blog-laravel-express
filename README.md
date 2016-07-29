@@ -17,3 +17,6 @@
 
 3. Via download
   1. Baixar a útima versão do Laravel e extrair o conteúdo em uma pasta de sua escolha, e no terminal rodar o seguinte comando `composer install`.
+  2. 
+  
+>> ###### [link](https://ask.fedoraproject.org/en/question/53827/howto-install-laravel-and-apache-on-fedora/)
