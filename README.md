@@ -9,7 +9,8 @@
 - Baixar o Laravel Installer via Composer
 
 - No fedora 23 abrir arquivo `.bashrc` e adicionar as seguintes linhas no final do arquivo
-```
+
+``` conf
 COMPOSER_PATH=~/.composer/vendor/bin
 PATH=$COMPOSER_PATH:$PATH
 export PATH
