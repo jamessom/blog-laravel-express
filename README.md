@@ -1,7 +1,5 @@
 # LaraBlog Express
 
--------------------------------------------------------
-
 ## Instalação
 
 1. Via Laravel Installer
