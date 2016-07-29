@@ -5,8 +5,7 @@
 ## Instalação
 
 1. Via Laravel Installer
-
-- Baixar o Laravel Installer via Composer
+1.1 Baixar o Laravel Installer via Composer
 
 - No fedora 23 abrir arquivo `.bashrc` e adicionar as seguintes linhas no final do arquivo
 
