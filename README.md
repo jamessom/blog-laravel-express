@@ -21,3 +21,16 @@
   1. Baixar a útima versão do Laravel e extrair o conteúdo em uma pasta de sua escolha, e no terminal rodar o seguinte comando `composer install`.
   
 [Referência](https://ask.fedoraproject.org/en/question/53827/howto-install-laravel-and-apache-on-fedora/)
+
+## Controllers
+
+Tranks só manda um ``` php artisan make:controller NomeDoController```
+
+## Rotas
+
+Bem sussa tbem, mas tem umas receitas de bolo:
+
+1. > Route::get('/rota', 'Controller@action');
+1. > Route::get('/rota', function () {
+    return view('qualquer_viewe');
+});
