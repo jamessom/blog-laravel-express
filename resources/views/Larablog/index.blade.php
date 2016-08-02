@@ -27,13 +27,17 @@
 @endsection
 
 @section('categorias')
+    <ul class="menu vertical" role="navigation" title="Categorias">
     @foreach ($categorias as $categoria)
-        <li><a href="#">{{ $categoria }}</a></li>
+        <li role="menuitem"><a href="#">{{ $categoria }}</a></li>
     @endforeach
+    </ul>
 @endsection
 
 @section('autores')
+    <ul class="menu vertical" role="navigation" title="Autores">
     @foreach ($autores as $autor)
-        <li><a href="#">{{ $autor }}</a></li>
+        <li role="menuitem"><a href="#">{{ $autor }}</a></li>
     @endforeach
+    </ul>
 @endsection

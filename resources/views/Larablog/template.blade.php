@@ -5,22 +5,8 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>@yield('titulo') : @yield('descricao')</title>
         
-        <link rel="stylesheet" href="{{ asset('/css/foundation.min.css') }}">
-        <link href="{{ asset('/css/foundation-icons.css') }}" rel="stylesheet" type="text/css">
-        <style id="style-1-cropbar-clipper">
-            .en-markup-crop-options {
-                top: 18px !important;
-                left: 50% !important;
-                margin-left: -100px !important;
-                width: 200px !important;
-                border: 2px rgba(255,255,255,.38) solid !important;
-                border-radius: 4px !important;
-            }
-
-            .en-markup-crop-options div div:first-of-type {
-                margin-left: 0px !important;
-            }
-        </style>
+        <link rel="stylesheet" href="{{ asset('/css/foundation.css') }}">
+        <link rel="stylesheet" href="{{ asset('/css/app.css') }}">
     </head>
     
     <body>
@@ -47,21 +33,15 @@
         <div class="row" id="content">
             
             <div class="medium-8 columns">
-                
                 @yield('content')
-                
             </div>
             
             <div class="medium-3 columns sticky-container" data-sticky-container="" style="height: 318px;">
                 <div class="sticky" data-sticky="ymuaiu-sticky" data-anchor="content" data-resize="civut2-sticky" style="max-width: 285px;" data-events="resize">
                     <h4>Categorias</h4>
-                    <ul>
                         @yield('categorias')
-                    </ul>
                     <h4>Autores</h4>
-                    <ul>
                         @yield('autores')
-                    </ul>
                 </div>
             </div>
         </div>
@@ -81,9 +61,9 @@
             </ul>
         </div>
         
-        <script src="{{ asset('/js/jquery-2.1.4.min.js') }}"></script>
-        <script src="{{ asset('/js/foundation.js') }}"></script>
-        <script>$(document).foundation();</script>
-        <script type="text/javascript" src="{{ asset('/js/zcom.js') }}"></script>
+        <script src="{{ asset('/js/vendor/jquery.js') }}"></script>
+        <script src="{{ asset('/js/vendor/foundation.js') }}"></script>
+        <script src="{{ asset('/js/vendor/what-input.js') }}"></script>
+        <script src="{{ asset('/js/app.js') }}"></script>
     </body>
 </html>
