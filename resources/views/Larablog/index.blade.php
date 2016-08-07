@@ -19,21 +19,30 @@
             <div class="callout">
                 <ul class="menu simple">
                     <li>
-                        <a href="#">
-                            Autor: {{ $post['author'] }}
-                        </a>
+                        <span>
+                            Autor:
+                            <a href="#{{ str_slug( $post['author'] ) }}">
+                                {{ $post['author'] }}
+                            </a>
+                        </span>
                     </li>
                     <li>
-                        <a href="#">
-                            Comentários: {{{ isset( $post->comments ) ? count($post->comments) : 'Default' }}}
-                        </a>
+                        <span>
+                            Comentários:
+                            <a href="#">
+                                {{ isset( $post->comments ) ? count($post->comments) : 0 }}
+                            </a>
+                        </span>
                     </li>
                     <li>
-                        <a href="#">
+                        <span>
                             Tags:
-                            <span class="info label">Info Label</span>
-                        </a>
-
+                            @foreach( $post->tags as $tag )
+                                <a href="#{{ str_slug( $tag->name ) }}">
+                                    <span class="info label">{{ $tag->name }}</span>
+                                </a>
+                            @endforeach
+                        </span>
                     </li>
                 </ul>
             </div>
