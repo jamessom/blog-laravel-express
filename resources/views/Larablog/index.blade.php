@@ -12,14 +12,29 @@
 @section('content')
     @foreach ($posts as $post)
         <div class="blog-post">
-            <h3>{{ $post['titulo'] }} <small>{{ $post['dt_publicacao'] }}</small></h3>
-            <img class="thumbnail" src="{{ asset('/img/850x350') }}">
-            <p class="text-justify">{{ $post['texto'] }}</p>
+            <h3>{{ $post['title'] }} <small>{{ $post['created_at'] }}</small></h3>
+            <img class="thumbnail" src="{{ $post['post_image'] }}">
+            <p class="text-justify">{{ $post['content'] }}</p>
 
             <div class="callout">
                 <ul class="menu simple">
-                    <li><a href="http://foundation.zurb.com/templates-previews-sites-f6/blog.html#">Autor: {{ $post['autor'] }}</a></li>
-                    <li><a href="http://foundation.zurb.com/templates-previews-sites-f6/blog.html#">Comentários: {{ $post['num_comentarios'] }}</a></li>
+                    <li>
+                        <a href="#">
+                            Autor: {{ $post['author'] }}
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            Comentários: {{{ isset( $post->comments ) ? count($post->comments) : 'Default' }}}
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            Tags:
+                            <span class="info label">Info Label</span>
+                        </a>
+
+                    </li>
                 </ul>
             </div>
         </div>

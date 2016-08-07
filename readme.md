@@ -1,27 +1,36 @@
-## Laravel PHP Framework
+# LaraBlog Express
 
-[![Build Status](https://travis-ci.org/laravel/framework.svg)](https://travis-ci.org/laravel/framework)
-[![Total Downloads](https://poser.pugx.org/laravel/framework/d/total.svg)](https://packagist.org/packages/laravel/framework)
-[![Latest Stable Version](https://poser.pugx.org/laravel/framework/v/stable.svg)](https://packagist.org/packages/laravel/framework)
-[![Latest Unstable Version](https://poser.pugx.org/laravel/framework/v/unstable.svg)](https://packagist.org/packages/laravel/framework)
-[![License](https://poser.pugx.org/laravel/framework/license.svg)](https://packagist.org/packages/laravel/framework)
+## Instalação
 
-Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable, creative experience to be truly fulfilling. Laravel attempts to take the pain out of development by easing common tasks used in the majority of web projects, such as authentication, routing, sessions, queueing, and caching.
+1. Via Laravel Installer
+   1. Baixar o Laravel Installer via Composer.
+   1. No fedora 23 abrir arquivo `.bashrc` e adicionar as seguintes linhas no final do arquivo
+  ```
+    COMPOSER_PATH=~/.composer/vendor/bin
+    PATH=$COMPOSER_PATH:$PATH
+    export PATH
+  ```
+   1. Rodar o comando `laravel new nome-do-diretorio`.
 
-Laravel is accessible, yet powerful, providing powerful tools needed for large, robust applications. A superb inversion of control container, expressive migration system, and tightly integrated unit testing support give you the tools you need to build any application with which you are tasked.
+2. Via Composer `create-project`
+  1. Rodar o comando `composer create-project laravel/laravel nome-do-diretorio --prefer-dist`.
+  2. Ou escolhendo um versão especifica do Laravel `composer create-project --prefer-dist laravel/laravel nome-do-projeto 5.1.*
+`
 
-## Official Documentation
+3. Via download
+  1. Baixar a útima versão do Laravel e extrair o conteúdo em uma pasta de sua escolha, e no terminal rodar o seguinte comando `composer install`.
+  
+[Referência](https://ask.fedoraproject.org/en/question/53827/howto-install-laravel-and-apache-on-fedora/)
 
-Documentation for the framework can be found on the [Laravel website](http://laravel.com/docs).
+## Controllers
 
-## Contributing
+Tranks só manda um ``` php artisan make:controller NomeDoController```
 
-Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](http://laravel.com/docs/contributions).
+## Rotas
 
-## Security Vulnerabilities
+Bem sussa tbem, mas tem umas receitas de bolo:
 
-If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell at taylor@laravel.com. All security vulnerabilities will be promptly addressed.
-
-### License
-
-The Laravel framework is open-sourced software licensed under the [MIT license](http://opensource.org/licenses/MIT)
+1. > Route::get('/rota', 'Controller@action');
+1. > Route::get('/rota', function () {
+    return view('qualquer_viewe');
+});
