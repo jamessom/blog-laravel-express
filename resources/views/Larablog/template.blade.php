@@ -6,6 +6,7 @@
         <title>@yield('titulo') : @yield('descricao')</title>
         <link rel="shortcut icon" href="{{ asset('/img/favicon.png') }}">
         <link rel="stylesheet"    href="{{ asset('/css/foundation.css') }}">
+        <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet">
         <link rel="stylesheet"    href="{{ asset('/css/app.css') }}">
     </head>
 

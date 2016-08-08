@@ -12,3 +12,4 @@
 */
 
 Route::get('/', 'LarablogController@index');
+Route::get('/admin', 'PostsAdminController@index');
