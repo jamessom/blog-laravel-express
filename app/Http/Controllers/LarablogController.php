@@ -10,6 +10,14 @@ use App\Http\Controllers\Controller;
 
 class LarablogController extends Controller
 {
+
+    private $post;
+
+    public function __construct(Post $post)
+    {
+        $this->post = $post;
+    }
+
     /**
      * Página inicial do Larablog
      */
@@ -23,7 +31,7 @@ class LarablogController extends Controller
             3 => "Contato",
         ];
 
-        $posts = \App\Post::all();
+        $posts = $this->post->paginate(5);
 
         $categorias = [
             0 => 'Laravel',

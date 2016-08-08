@@ -49,17 +49,7 @@
 
 
         <div class="row column">
-            <ul class="pagination" role="navigation" aria-label="Pagination">
-                <li class="disabled">Anterior</li>
-                <li class="current"><span class="show-for-sr">You're on page</span> 1</li>
-                <li><a href="http://foundation.zurb.com/templates-previews-sites-f6/blog.html#" aria-label="Page 2">2</a></li>
-                <li><a href="http://foundation.zurb.com/templates-previews-sites-f6/blog.html#" aria-label="Page 3">3</a></li>
-                <li><a href="http://foundation.zurb.com/templates-previews-sites-f6/blog.html#" aria-label="Page 4">4</a></li>
-                <li class="ellipsis"></li>
-                <li><a href="http://foundation.zurb.com/templates-previews-sites-f6/blog.html#" aria-label="Page 12">12</a></li>
-                <li><a href="http://foundation.zurb.com/templates-previews-sites-f6/blog.html#" aria-label="Page 13">13</a></li>
-                <li><a href="http://foundation.zurb.com/templates-previews-sites-f6/blog.html#" aria-label="Next page">Próximo</a></li>
-            </ul>
+            @yield('paginacao')
         </div>
 
         <script src="{{ asset('/js/vendor/jquery.js') }}"></script>

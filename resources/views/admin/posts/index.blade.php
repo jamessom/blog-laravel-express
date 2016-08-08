@@ -30,6 +30,11 @@
         </tbody>
     </table>
 
-    {!! $posts->render() !!}
+@endsection
+
+
+@section('paginacao')
+
+{!! $posts->render() !!}
 
 @endsection

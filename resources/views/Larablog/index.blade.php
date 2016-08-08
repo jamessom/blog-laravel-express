@@ -65,3 +65,9 @@
     @endforeach
     </ul>
 @endsection
+
+@section('paginacao')
+
+{!! $posts->render() !!}
+
+@endsection
